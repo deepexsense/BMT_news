@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn NoteSite.wsgi --log-file -
+web: gunicorn BMTNews.wsgi --log-file -

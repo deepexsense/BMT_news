@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import dj_database_url
+import psycopg2
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -76,17 +79,24 @@ WSGI_APPLICATION = 'BMTNews.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 # LOCAL DB
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bmtnews_db',
-        'USER': 'deepexsense',
-        'PASSWORD': 'Ghjcnjq0',
-        'HOST': '',
-        'PORT': '',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'bmtnews_db',
+#         'USER': 'deepexsense',
+#         'PASSWORD': 'Ghjcnjq0',
+#         'HOST': '',
+#         'PORT': '',
+#     }
+# }
+#
 
+# HEROKU DB
+DATABASE_URL = os.environ['DATABASE_URL']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+
+DATABASES = {'default': dj_database_url.config(conn_max_age=600, ssl_require=True)}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
