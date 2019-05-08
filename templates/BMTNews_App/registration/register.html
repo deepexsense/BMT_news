@@ -1,0 +1,15 @@
+{% extends 'BMTNews_App/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="card" id="id_signup_card">
+        <div class="card-body" id="id_signup_card-body">
+            <h2>Регистрация</h2>
+            <form id="register_form" action="{% url 'signup' %}" method="POST">
+                {% csrf_token %}
+                <div id="id_register_form">{{ form.as_p }}</div>
+                <button type="submit" id="id_register_form" class="btn btn-outline-success">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

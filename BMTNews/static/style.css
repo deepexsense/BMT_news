@@ -1,0 +1,51 @@
+body {
+    background-image: url(img/gears_3.png);
+    background-repeat: repeat;
+}
+
+#auth {
+    margin-right: 10px;
+}
+.nav-item{
+    margin-right: 5px;
+}
+#id_login{
+    width: 400px;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+h2{
+    text-align: center;
+}
+#id_login_form{
+    text-align: right;
+}
+#id_login-input{
+    margin-left: 125px;
+}
+#id_main_info{
+    width: 1250px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#id_register_form{
+    text-align: right;
+    margin-right: 50px;
+}
+#id_signup_card{
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#id_signup_card-body{
+    clear:both;
+    text-align: center;
+
+}
+#id_username{
+    clear: both;
+}
+.errorlist{
+    background: orange;
+}

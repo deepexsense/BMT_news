@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Новости БМТ{% endblock %}</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url "index" %}">Новости БМТ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="btn btn-outline-info" href="{% url "index" %}">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-info" href="#">Блог</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-info" href="#">Форум</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-info" href="#">Обратная связь</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-outline-info" href="#">Подписка</a>
+            </li>
+        </ul>
+        <div id="auth">
+            {% if user.is_authenticated %}
+                {{ user.get_username }}
+                <a id="id_sign_out" href="{% url "logout" %}" class="btn btn-outline-danger">Выход</a>
+            {% else %}
+                <a href="{% url "signup" %}" id="id_sign_up" class="btn btn-outline-success">Зарегестрироваться</a>
+                <a href="{% url "login" %}" id="id_sign_in" class="btn btn-outline-success">Войти</a>
+            {% endif %}
+        </div>
+        <form class="form-inline my-2 my-lg-0" id="id_search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+        </form>
+    </div>
+</nav>
+{% block content %}
+
+{% endblock %}
+
+</body>
+{# LINKS#}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static "Shards-2.1.0/css/shards.min.css" %}">
+<link rel="stylesheet" href="{% static "style.css" %}">
+
+{#SCRIPTS#}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="{% static "Shards-2.1.0/js/shards.min.js" %}"></script>
+</html>
