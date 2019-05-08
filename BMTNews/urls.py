@@ -20,5 +20,4 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('BMTNews_App.urls')),
     url(r'', include('django.contrib.auth.urls')),
-    # url(r'^forums/', include('simple_forums.urls')),
 ]
