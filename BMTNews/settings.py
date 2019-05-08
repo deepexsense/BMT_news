@@ -28,7 +28,8 @@ SECRET_KEY = '_m04w54c**6%2(pby(%z77)a!y)g0p)bb!fdw*craryv-^oyjt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', ]
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'bmtnews.herokuapp.com',]
 
 
 # Application definition
