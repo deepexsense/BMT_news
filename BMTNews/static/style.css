@@ -24,9 +24,9 @@ h2{
     margin-left: 125px;
 }
 #id_main_info{
-    width: 1250px;
-    margin-left: 5%;
-    margin-top: 5%;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
 }
 #id_register_form{
     text-align: right;
@@ -35,7 +35,7 @@ h2{
 #id_signup_card{
     width: 500px;
     margin-left: 30%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #id_signup_card-body{
