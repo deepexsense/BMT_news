@@ -18,7 +18,6 @@ import psycopg2
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -29,8 +28,7 @@ SECRET_KEY = '_m04w54c**6%2(pby(%z77)a!y)g0p)bb!fdw*craryv-^oyjt'
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1',
-                 'bmtnews.herokuapp.com',]
-
+                 'bmtnews.herokuapp.com', ]
 
 # Application definition
 
@@ -76,29 +74,27 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'BMTNews.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 # LOCAL DB
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'bmtnews_db',
-#         'USER': 'deepexsense',
-#         'PASSWORD': 'Ghjcnjq0',
-#         'HOST': '',
-#         'PORT': '',
-#     }
-# }
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'bmtnews_db',
+        'USER': 'deepexsense',
+        'PASSWORD': 'Ghjcnjq0',
+        'HOST': '',
+        'PORT': '',
+    }
+}
 
 # HEROKU DB
-DATABASE_URL = os.environ['DATABASE_URL']
-
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-
-DATABASES = {'default': dj_database_url.config(conn_max_age=600, ssl_require=True)}
+# DATABASE_URL = os.environ['DATABASE_URL']
+#
+# conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+#
+# DATABASES = {'default': dj_database_url.config(conn_max_age=600, ssl_require=True)}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -118,7 +114,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -132,13 +127,11 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = 'static'
-
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'BMTNews/static'),
+    os.path.join(BASE_DIR, "BMTNews/static"),
 ]
+STATIC_URL = '/static/'
+STATIC_ROOT = 'staticfiles'

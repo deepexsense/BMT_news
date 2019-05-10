@@ -8,8 +8,20 @@ class SignUpForm(UserCreationForm):
     first_name = forms.CharField(max_length=30, required=False, label='Имя')
     last_name = forms.CharField(max_length=30, required=False, label='Фамилия')
     email = forms.EmailField(max_length=100, required=True)
-    password2 = forms.CharField(required=True, label="Повторите пароль")
+    password2 = forms.CharField(required=True, label="Повторите пароль", widget=forms.PasswordInput)
 
     class Meta:
         model = User
         fields = ('username', 'first_name', 'last_name', 'email', 'password1', 'password2',)
+
+
+class CommentForm(forms.Form):
+    parent_comment = forms.IntegerField(
+        widget=forms.HiddenInput,
+        required=False
+    )
+
+    comment_area = forms.CharField(
+        label="",
+        widget=forms.Textarea
+    )

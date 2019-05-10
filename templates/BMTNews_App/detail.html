@@ -1,0 +1,11 @@
+{% extends 'BMTNews_App/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="card" id="id_post">
+        <div class="card-body">
+            <h4 class="card-title">{{ post.title }}</h4>
+            <p>{{ post.text }}</p>
+        </div>
+    </div>
+{% endblock %}

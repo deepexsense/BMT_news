@@ -1,10 +1,12 @@
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.shortcuts import render
-from django.views.generic import FormView, TemplateView, ListView
+from django.shortcuts import render, get_object_or_404
+from django.views.decorators.http import require_http_methods
+from django.views.generic import FormView, TemplateView, ListView, DetailView
 from django.views.generic.base import View
 
-from BMTNews_App.forms import SignUpForm
+from BMTNews_App.forms import SignUpForm, CommentForm
 from BMTNews_App.models import Post
 
 
@@ -49,3 +51,11 @@ class PostsView(ListView):
         context = super(PostsView, self).get_context_data(**kwargs)
         context['posts'] = Post.objects.all()
         return context
+
+
+class PostDetailView(DetailView):
+    template_name = 'BMTNews_App/detail.html'
+
+    def get_object(self, queryset=None):
+        post = Post.objects.get(id=self.kwargs['id'])
+        return post

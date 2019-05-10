@@ -49,3 +49,7 @@ h2{
 .errorlist{
     background: orange;
 }
+#id_post{
+    margin-top: 5px;
+    margin-left: 5px;
+}

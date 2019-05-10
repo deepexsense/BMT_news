@@ -16,10 +16,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="btn btn-outline-info" href="{% url "index" %}">Главная</a>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-outline-info" href="#">Блог</a>
+                <a class="btn btn-outline-info" href="{% url "posts"%}">Блог</a>
             </li>
             <li class="nav-item">
                 <a class="btn btn-outline-info" href="#">Форум</a>
@@ -36,7 +33,7 @@
                 {{ user.get_username }}
                 <a id="id_sign_out" href="{% url "logout" %}" class="btn btn-outline-danger">Выход</a>
             {% else %}
-                <a href="{% url "signup" %}" id="id_sign_up" class="btn btn-outline-success">Зарегестрироваться</a>
+                <a href="{% url "signup" %}" id="id_sign_up" class="btn btn-outline-success">Зарегистрироваться</a>
                 <a href="{% url "login" %}" id="id_sign_in" class="btn btn-outline-success">Войти</a>
             {% endif %}
         </div>
