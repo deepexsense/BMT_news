@@ -6,125 +6,153 @@ body {
 #auth {
     margin-right: 10px;
 }
-.nav-item{
+
+.nav-item {
     margin-right: 5px;
 }
-#id_login{
+
+#id_login {
     width: 400px;
     margin-left: 35%;
     margin-top: 10%;
 }
-h2{
+
+h2 {
     text-align: center;
 }
-#id_login_form{
+
+#id_login_form {
     text-align: right;
 }
-#id_login-input{
+
+#id_login-input {
     margin-left: 125px;
 }
-#id_main_info{
+
+#id_main_info {
     width: 98%;
     margin-left: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
 }
-#id_register_form{
+
+#id_register_form {
     text-align: right;
     margin-right: 50px;
 }
-#id_signup_card{
+
+#id_signup_card {
     width: 500px;
     margin-left: 30%;
     margin-top: 2%;
 }
 
-#id_signup_card-body{
-    clear:both;
+#id_signup_card-body {
+    clear: both;
     text-align: center;
 }
-#id_username{
+
+#id_username {
     clear: both;
 }
-.errorlist{
+
+.errorlist {
     background: orange;
 }
-#id_main{
+
+#id_main {
     margin-top: 1%;
     margin-left: 1%;
     width: 98%;
     margin-bottom: 1%;
 }
-#id_article_header{
+
+#id_article_header {
     height: 60px;
 }
-#id_article{
+
+#id_article {
     margin-bottom: 1%;
 }
-#id_article_card{
+
+#id_article_card {
     margin-top: 1%;
     margin-left: 1%;
     width: 98%;
     margin-bottom: 1%;
 }
-#id_header{
+
+#id_header {
     position: sticky;
     z-index: 2;
 }
 
-#id_content{
+#id_content {
     position: relative;
     z-index: 1;
 }
 
 .content {
-  padding: 16px;
+    padding: 16px;
 }
 
 .sticky {
-    position: fixed!important;
+    position: fixed !important;
     top: 0;
     width: 100%;
 }
 
 .sticky + .content {
-  padding-top: 102px;
+    padding-top: 102px;
 }
-#navbarSupportedContent{
+
+#navbarSupportedContent {
     margin-left: 1%;
 }
-#id_comments{
+
+#id_comments {
     /*margin-top: 2%;*/
     /*margin-left: 2%;*/
     width: 100%;
     margin: 2%;
 }
-#write_comment{
+
+#write_comment {
     margin-bottom: 2%;
 }
-#id_panel_header{
+
+#id_panel_header {
     height: 30px;
 }
-.row{
+
+.row {
     /*border-top: 1px solid gray;*/
     border-bottom: 1px solid gray;
     margin-bottom: 2%;
 }
-#id_comment{
+
+#id_comment {
     margin-bottom: 1%;
 }
-#id_main_img{
+
+#id_main_img {
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 2%;
 }
-#carouselExampleIndicators{
+
+#carouselExampleIndicators {
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 2%;
     width: 60%;
     height: 60%;
 }
-#id_navbar{
+
+#id_navbar {
     background-color: #F8F8F8;
+}
+
+#id_section {
+    margin-bottom: 1%;
 }

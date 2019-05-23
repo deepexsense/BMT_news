@@ -12,7 +12,7 @@
             {% if section_list %}
                 <ul>
                     {% for section in section_list %}
-                        <li>
+                        <li id="id_section">
                             <a class="btn btn-outline-secondary"
                                href="{% url "section" section.section_url %}">{{ section.section_title }}</a>
                         </li>
