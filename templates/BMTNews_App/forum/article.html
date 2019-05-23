@@ -1,0 +1,63 @@
+{% extends 'BMTNews_App/base.html' %}
+{% load staticfiles %}
+{% load bootstrap3 %}
+
+{% block content %}
+    <div class="card" id="id_article_card">
+        <div class="card-header" id="id_article_header">
+            <p class="badge badge-outline-danger">{{ article.article_author }}</p>
+            <p class="badge badge-outline-warning" id="id_article_header_date">{{ article.article_date }}</p>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">{{ article.article_title }}</h3>
+            <p class="card-text">{{ article.article_content|safe }}</p>
+            <div class="card-group">
+                <div id="id_comments">
+                    {% for comment in comments %}
+                        <a name="comment-{{ comment.id }}"></a>
+                        <div class="row" id="{{ comment.id }}">
+                            <div class="col-md-{{ comment.get_col }} offset-md-{{ comment.get_offset }}" id="id_comment">
+                                <div class="panel-body">
+                                    <div class="panel-heading" id="id_panel_header">
+                                        {% if article.article_author.username == comment.user_id.username %}
+                                            <p class="badge badge-outline-danger">{{ comment.user_id.username}}</p>
+                                        {% else %}
+                                            <p class="badge badge-outline-info">{{ comment.user_id.username}}</p>
+                                        {% endif %}
+                                        <p class="badge badge-outline-warning">{{ comment.pub_date }}</p>
+
+
+                                    </div>
+                                    <div>{{ comment.content|safe }}</div>
+                                    {% if form %}
+                                        <a class="btn btn-default btn-xs pull-right"
+                                           onclick="return show_comments_form({{ comment.id }})">
+                                            <button class="btn btn-outline-secondary">ОТВЕТИТЬ</button>
+                                        </a>
+                                    {% endif %}
+
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    {% if form %}
+                        <h3 id="write_comment"><a onclick="return show_comments_form('write_comment')">Написать</a></h3>
+                        <form id="comment_form" action="{% url 'add_comment' article.id %}" method="post">
+                            {% csrf_token %}
+                            {% bootstrap_form form %}
+                            {% buttons %}
+                                <button type="submit" class="btn btn-outline-success">{% bootstrap_icon "comment" %}СОХРАНИТЬ</button>
+                            {% endbuttons %}
+                        </form>
+                    {% else %}
+                        <div class="panel panel-warning">
+                            <div class="panel-body">
+                                Только авторизованные пользователи могут участвовать в обсуждении.<br/>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

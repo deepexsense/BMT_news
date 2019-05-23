@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.models import User
+
+from BMTNews_App.models import User
 
 
 class SignUpForm(UserCreationForm):
@@ -16,12 +17,11 @@ class SignUpForm(UserCreationForm):
 
 
 class CommentForm(forms.Form):
-    parent_comment = forms.IntegerField(
-        widget=forms.HiddenInput,
-        required=False
-    )
+    parent_comment = forms.IntegerField(widget=forms.HiddenInput, required=False)
+    comment_area = forms.CharField(label="", widget=forms.Textarea)
 
-    comment_area = forms.CharField(
-        label="",
-        widget=forms.Textarea
-    )
+
+class ContactForm(forms.Form):
+    name = forms.CharField(label="Имя", widget=forms.TextInput)
+    email = forms.EmailField(widget=forms.EmailInput)
+    message = forms.CharField(label="Сообщение",widget=forms.Textarea)

@@ -25,6 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_m04w54c**6%2(pby(%z77)a!y)g0p)bb!fdw*craryv-^oyjt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1',
@@ -33,6 +34,8 @@ ALLOWED_HOSTS = ['127.0.0.1',
 # Application definition
 
 INSTALLED_APPS = [
+    'bootstrap4',
+    'bootstrap3',
     'BMTNews_App',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -135,3 +138,12 @@ STATICFILES_DIRS = [
 ]
 STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'               # Сервер для отправки сообщений
+EMAIL_HOST_USER = 'furi5ad@gmail.com'        # имя пользователя
+EMAIL_HOST_PASSWORD = 'Dominus13'           # пароль от ящика
+EMAIL_PORT = 587                            # порт для подключения
+EMAIL_USE_TLS = True                        # использование протокола шифрования
+DEFAULT_FROM_EMAIL = 'furi5ad@gmail.com'   # email, с которого будет отправлено письмо
+AUTH_USER_MODEL = 'BMTNews_App.User'

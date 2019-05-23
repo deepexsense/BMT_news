@@ -1,0 +1,26 @@
+{% extends 'BMTNews_App/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="card" id="id_main">
+        <div class="card-body">
+            <h1 class="card-title">Разделы</h1>
+        </div>
+    </div>
+    <div class="card" id="id_main">
+        <div class="card-body">
+            {% if section_list %}
+                <ul>
+                    {% for section in section_list %}
+                        <li>
+                            <a class="btn btn-outline-secondary"
+                               href="{% url "section" section.section_url %}">{{ section.section_title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% load bootstrap4 %}
+            {% bootstrap_pagination section_list %}
+        </div>
+    </div>
+{% endblock %}

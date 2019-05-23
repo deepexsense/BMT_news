@@ -1,0 +1,15 @@
+{% extends 'BMTNews_App/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="card" id="id_main">
+            <div class="card-body">
+                <h4 class="card-title">{{ post.post_title }}</h4>
+                <p>{{ post.post_content }}</p>
+                <a href="{% url 'post' post.id %}" id="id_details" class="btn btn-outline-primary">Подробнее &rarr;
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

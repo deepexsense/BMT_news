@@ -1,0 +1,28 @@
+{% extends 'BMTNews_App/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="card" id="id_main">
+        <div class="card-body">
+            <h1 class="card-title">Обсуждения</h1>
+        </div>
+    </div>
+    <div class="card" id="id_main">
+        <div class="card-body">
+            <ul>
+                {% for article in article_list|dictsortreversed:"article_date" %}
+                    {% if article.article_status %}
+                        <li id="id_article">
+                            <a class="btn btn-outline-secondary"
+                               href="{% url "article" section.section_url article.id %}">
+                                {{ article.article_title }}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            {% load bootstrap4 %}
+            {% bootstrap_pagination article_list %}
+        </div>
+    </div>
+{% endblock %}
