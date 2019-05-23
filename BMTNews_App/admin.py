@@ -5,7 +5,7 @@ from django.contrib import admin
 from django.core.mail import send_mail
 
 from BMTNews import settings
-from BMTNews_App.models import Post, Article, Comment, Section, User
+from BMTNews_App.models import Post, Article, Comment, Section, User, PostComment
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -24,3 +24,5 @@ admin.site.register(Section)
 admin.site.register(Article)
 admin.site.register(Comment)
 admin.site.register(User)
+admin.site.register(PostComment)
+
