@@ -1,6 +1,8 @@
 {% extends 'BMTNews_App/base.html' %}
 {% load staticfiles %}
 
+{% block title %}Блог{% endblock %}
+
 {% block content %}
     {% for post in posts %}
         <div class="card" id="id_main">

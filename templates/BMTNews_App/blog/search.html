@@ -1,6 +1,8 @@
 {% extends 'BMTNews_App/base.html' %}
 {% load staticfiles %}
 
+{% block title %}Поиск{% endblock %}
+
 {% block content %}
     {% if posts %}
         {% for post in posts %}

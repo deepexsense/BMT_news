@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c74fcec0-3783-439d-8624-dc4f168cd3b7" name="Default Changelist" comment="Merge branch 'master' of https://github.com/deepexsense/BMT_news">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BMTNews/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/BMTNews/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/blog/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/blog/posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/blog/posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/blog/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/blog/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/contact/contact_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/contact/contact_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/forum/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/forum/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/forum/forum.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/forum/forum.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/forum/section.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/forum/section.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BMTNews_App/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BMTNews_App/registration/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,82 +76,69 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BMTNews_App/views.py">
+        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-777">
-              <caret line="92" column="70" selection-start-line="92" selection-start-column="70" selection-end-line="92" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/blog/detail.html">
+        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/registration/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+            <state relative-caret-position="51">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/forum/article.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/registration/logout.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BMTNews/settings.py">
+        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/registration/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-              <folding>
-                <element signature="e#308#317#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BMTNews/static/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="156" column="22" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BMTNews_App/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BMTNews_App/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/forum/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/forum/section.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+            <state relative-caret-position="51">
+              <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/blog/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -148,17 +146,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/forum/forum.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="51">
+              <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/blog/posts.html">
+        <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/contact/contact_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -191,8 +189,6 @@
         <option value="$PROJECT_DIR$/templates/BMTNews_App/register.html" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/user_posts.html" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/registration/logout.html" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/registration/login.html" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/registration/register.html" />
         <option value="$PROJECT_DIR$/staticfiles/style.css" />
         <option value="$PROJECT_DIR$/BMTNews/urls.py" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/detail.html" />
@@ -202,27 +198,29 @@
         <option value="$PROJECT_DIR$/templates/BMTNews_App/section.html" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/article.html" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/posts.html" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/forum/article.html" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/blog/posts.html" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/contact/contact_form.html" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/index.html" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/contact/subscribe.html" />
         <option value="$PROJECT_DIR$/BMTNews_App/forms.py" />
         <option value="$PROJECT_DIR$/BMTNews_App/models.py" />
         <option value="$PROJECT_DIR$/BMTNews/static/js/main.js" />
         <option value="$PROJECT_DIR$/BMTNews_App/filter.py" />
         <option value="$PROJECT_DIR$/BMTNews_App/urls.py" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/base.html" />
         <option value="$PROJECT_DIR$/BMTNews_App/views.py" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/blog/search.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/blog/detail.html" />
         <option value="$PROJECT_DIR$/BMTNews_App/admin.py" />
-        <option value="$PROJECT_DIR$/templates/BMTNews_App/forum/forum.html" />
         <option value="$PROJECT_DIR$/BMTNews/static/style.css" />
         <option value="$PROJECT_DIR$/BMTNews/settings.py" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/contact/contact_form.html" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/blog/posts.html" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/forum/forum.html" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/blog/detail.html" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/blog/search.html" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/index.html" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/registration/login.html" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/registration/register.html" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/base.html" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/forum/section.html" />
+        <option value="$PROJECT_DIR$/templates/BMTNews_App/forum/article.html" />
       </list>
     </option>
   </component>
@@ -318,6 +316,13 @@
               <item name="BMTNews_App" type="462c0819:PsiDirectoryNode" />
               <item name="forum" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BMTNews_v2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BMTNews_v2" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="BMTNews_App" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -399,12 +404,12 @@
       <workItem from="1557310506398" duration="12894000" />
       <workItem from="1557324756609" duration="4004000" />
       <workItem from="1557489917282" duration="5803000" />
-      <workItem from="1558294133246" duration="80321000" />
+      <workItem from="1558294133246" duration="81848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117586000" />
+    <option name="totallyTimeSpent" value="119113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -438,30 +443,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/staticfiles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" selection-start-line="51" selection-end-line="55" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BMTNews/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#223#232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://03452433-d34c-4368-819c-604d39f9149d/database/bmtnews_db/schema/public/table/BMTNews_App_section">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://03452433-d34c-4368-819c-604d39f9149d/database/bmtnews_db/schema/public/table/auth_user_user_permissions">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -610,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/contact/contact_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="18" column="83" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/contact/subscribe.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -644,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BMTNews_App/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -671,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BMTNews_App/filter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -685,13 +645,6 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/blog/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="62" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -719,13 +672,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/blog/posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BMTNews_App/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -743,37 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BMTNews/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding>
-            <element signature="e#308#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/forum/forum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/blog/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="73" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/forum/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BMTNews_App/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -781,10 +696,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BMTNews/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="90" column="19" lean-forward="true" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+          <folding>
+            <element signature="e#308#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/blog/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/blog/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/blog/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/contact/contact_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/registration/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/registration/logout.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/registration/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/forum/forum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="36" lean-forward="true" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/forum/section.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state relative-caret-position="51">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/forum/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
         </state>
       </provider>
     </entry>
