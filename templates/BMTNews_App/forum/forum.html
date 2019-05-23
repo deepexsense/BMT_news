@@ -11,7 +11,7 @@
         <div class="card-body">
             {% if section_list %}
                 <ul>
-                    {% for section in section_list %}
+                    {% for section in section_list|dictsort:"section_title" %}
                         <li id="id_section">
                             <a class="btn btn-outline-secondary"
                                href="{% url "section" section.section_url %}">{{ section.section_title }}</a>
