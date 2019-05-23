@@ -11,7 +11,7 @@
         <div class="card-body">
             <ul>
                 {% for article in article_list|dictsortreversed:"article_date" %}
-                    {% if article.article_status %}
+                    {% if article.article_status and article.article_section == section %}
                         <li id="id_article">
                             <a class="btn btn-outline-secondary"
                                href="{% url "article" section.section_url article.id %}">
