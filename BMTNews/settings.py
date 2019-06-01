@@ -34,7 +34,7 @@ ALLOWED_HOSTS = ['127.0.0.1',
 # Application definition
 
 INSTALLED_APPS = [
-    'dropbox',
+    'cloudinary',
     'bootstrap4',
     'bootstrap3',
     'BMTNews_App',
@@ -140,9 +140,6 @@ STATICFILES_DIRS = [
 STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
 
-# MEDIA_DIRS = os.path.join(BASE_DIR, "BMTNews/media")
-# MEDIA_URL = '/static/media/'
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'               # Сервер для отправки сообщений
 EMAIL_HOST_USER = 'furi5ad@gmail.com'        # имя пользователя
@@ -151,7 +148,9 @@ EMAIL_PORT = 587                            # порт для подключен
 EMAIL_USE_TLS = True                        # использование протокола шифрования
 DEFAULT_FROM_EMAIL = 'furi5ad@gmail.com'   # email, с которого будет отправлено письмо
 AUTH_USER_MODEL = 'BMTNews_App.User'
-DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-DROPBOX_OAUTH2_TOKEN = 'NONPloBlelAAAAAAAAAAGmagyXwF_tHM2uPUBWm8JEce5AY-bFt8ZARXQN7aLS-y'
-DROPBOX_ROOT_PATH = 'BMTNews/static/media/'
-MEDIA_ROOT = DROPBOX_ROOT_PATH
+
+CLOUDINARY = {
+  'cloud_name': 'hxgbvvl4r',
+  'api_key': '781788251439738',
+  'api_secret': 'T4S0mpyjcebKL3y0_fnC5q17kvs',
+}

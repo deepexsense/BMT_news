@@ -8,7 +8,18 @@ from BMTNews import settings
 from BMTNews_App.models import Post, Article, Comment, Section, User, PostComment, News
 
 
+class NewsForm(forms.ModelForm):
+    class Meta:
+        model = News
+        fields ='__all__'
+
+    # def clean_news_img(self):
+    #     print(self.files, self.data)
+    #     raise Exception("stop")
+
 class NewsAdmin(admin.ModelAdmin):
+    form = NewsForm
+
     def save_model(self, request, obj, form, change):
         super().save_model(request, obj, form, change)
         subscribers = User.objects.filter(is_subscribed=True)
@@ -26,4 +37,3 @@ admin.site.register(Comment)
 admin.site.register(User)
 admin.site.register(PostComment)
 admin.site.register(News, NewsAdmin)
-

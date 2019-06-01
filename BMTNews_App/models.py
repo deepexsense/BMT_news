@@ -1,3 +1,5 @@
+import cloudinary
+from cloudinary.models import CloudinaryField
 from django.contrib.auth.models import AbstractUser
 from django.contrib.postgres.fields import ArrayField
 from django.db import models
@@ -103,7 +105,7 @@ class Comment(models.Model):
 class News(models.Model):
     news_title = models.CharField(max_length=100)
     news_text = models.TextField()
-    news_img = models.ImageField(upload_to='')
+    news_img = CloudinaryField()
     news_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):

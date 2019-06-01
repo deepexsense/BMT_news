@@ -1,5 +1,6 @@
 {% extends 'BMTNews_App/base.html' %}
 {% load staticfiles %}
+{% load cloudinary %}
 
 {% block title %}Главная{% endblock %}
 
@@ -22,7 +23,7 @@
         <div class="row" style="border-bottom: none; height: 20rem; margin-right: 0">
             <div class="card" id="id_last_news">
                 <a href="{% url "news" last_news.id %}" id="id_a_card">
-                    <img class="card-img-top" src="/static/media/{{ last_news.news_img }}"
+                    <img class="card-img-top" src="https://res.cloudinary.com/hxgbvvl4r/image/upload/v1559416509/{{ last_news.news_img }}"
                          alt="{{ last_news.news_title }}">
                     <div class="card-body">
                         <h4 class="card-title">{{ last_news.news_title }}</h4>
