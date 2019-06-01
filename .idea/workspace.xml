@@ -103,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/feed.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="357">
               <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -133,7 +133,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BMTNews/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -157,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BMTNews/static/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2907">
-              <caret line="171" column="15" selection-start-line="171" selection-start-column="15" selection-end-line="171" selection-end-column="15" />
+            <state relative-caret-position="124">
+              <caret line="167" column="19" selection-start-line="167" selection-start-column="19" selection-end-line="167" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -230,13 +230,13 @@
         <option value="$PROJECT_DIR$/BMTNews_App/models.py" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/index.html" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/piece_of_news.html" />
-        <option value="$PROJECT_DIR$/BMTNews/static/style.css" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/feed.html" />
+        <option value="$PROJECT_DIR$/BMTNews/static/style.css" />
         <option value="$PROJECT_DIR$/BMTNews/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="432" />
     <option name="y" value="77" />
     <option name="width" value="697" />
@@ -406,18 +406,17 @@
       <workItem from="1559135324292" duration="1483000" />
       <workItem from="1559222136675" duration="34278000" />
       <workItem from="1559388564801" duration="13059000" />
-      <workItem from="1559422472633" duration="705000" />
+      <workItem from="1559422472633" duration="843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175393000" />
+    <option name="totallyTimeSpent" value="175531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.22012103" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.22012103" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.17549168" />
       <window_info id="Favorites" order="2" sideWeight="0.50121063" side_tool="true" weight="0.17549168" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3289689" />
@@ -432,7 +431,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.33387887" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49848714" visible="true" weight="0.33387887" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49848714" visible="true" weight="0.33387887" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3289689" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -675,23 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BMTNews/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="171" column="15" selection-start-line="171" selection-start-column="15" selection-end-line="171" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BMTNews/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="84" selection-start-line="84" selection-end-line="93" selection-end-column="1" />
-          <folding>
-            <element signature="e#308#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -701,10 +683,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/BMTNews_App/feed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="357">
           <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BMTNews/static/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="167" column="19" selection-start-line="167" selection-start-column="19" selection-end-line="167" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BMTNews/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="84" selection-start-line="84" selection-end-line="93" selection-end-column="1" />
+          <folding>
+            <element signature="e#308#317#0" expanded="true" />
           </folding>
         </state>
       </provider>
