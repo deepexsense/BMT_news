@@ -121,11 +121,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BMTNews/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+            <state relative-caret-position="153">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -216,7 +225,6 @@
         <option value="$PROJECT_DIR$/BMTNews_App/forms.py" />
         <option value="$PROJECT_DIR$/BMTNews/static/js/main.js" />
         <option value="$PROJECT_DIR$/BMTNews_App/filter.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/contact/contact_form.html" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/blog/posts.html" />
@@ -239,6 +247,7 @@
         <option value="$PROJECT_DIR$/BMTNews/static/style.css" />
         <option value="$PROJECT_DIR$/BMTNews_App/views.py" />
         <option value="$PROJECT_DIR$/templates/BMTNews_App/registration/logout.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/BMTNews/settings.py" />
       </list>
     </option>
@@ -413,23 +422,24 @@
       <workItem from="1558685142260" duration="1829000" />
       <workItem from="1558732149787" duration="1218000" />
       <workItem from="1559135324292" duration="1483000" />
-      <workItem from="1559222136675" duration="33135000" />
+      <workItem from="1559222136675" duration="33471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160486000" />
+    <option name="totallyTimeSpent" value="160822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.21406959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878934" visible="true" weight="0.21406959" />
       <window_info id="Structure" order="1" sideWeight="0.50121063" side_tool="true" weight="0.17549168" />
       <window_info id="Favorites" order="2" sideWeight="0.50121063" side_tool="true" weight="0.17549168" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49848714" visible="true" weight="0.32405892" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848714" weight="0.32405892" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -438,7 +448,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.33387887" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49848714" weight="0.33387887" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49848714" visible="true" weight="0.33387887" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.3289689" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -478,13 +488,6 @@
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -762,10 +765,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BMTNews/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+        <state relative-caret-position="153">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#308#317#0" expanded="true" />
           </folding>
