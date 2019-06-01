@@ -6,3 +6,4 @@ psycopg2-binary
 dj-database-url
 django-bootstrap4
 django-bootstrap3
+pillow
