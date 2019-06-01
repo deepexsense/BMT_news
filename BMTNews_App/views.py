@@ -2,6 +2,7 @@ from django.contrib import auth
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.syndication.views import Feed
 from django.core.exceptions import ObjectDoesNotExist
 from django.core.mail import send_mail
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
@@ -16,7 +17,7 @@ from django.views.generic.base import View
 
 from BMTNews import settings
 from BMTNews_App.forms import SignUpForm, CommentForm, ContactForm
-from BMTNews_App.models import Post, Section, Article, Comment, PostComment, User
+from BMTNews_App.models import Post, Section, Article, Comment, PostComment, User, News
 
 
 class SignUpFormView(FormView):
@@ -49,7 +50,7 @@ class SignInFormView(FormView):
 class LogoutView(View):
     def get(self, request):
         logout(request)
-        return render(request, 'BMTNews_App/index.html', {})
+        return render(request, 'BMTNews_App/registration/logout.html', {})
 
 
 class PostsView(ListView):
@@ -232,3 +233,40 @@ class UserSubscribedView(View):
         user.is_subscribed = not user.is_subscribed
         user.save()
         return HttpResponse()
+
+
+class NewsFeed(ListView):
+    model = News
+    template_name = 'BMTNews_App/feed.html'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = {}
+        all_news = News.objects.all().order_by('-news_date')
+        current_page = Paginator(all_news, 4)
+        page = self.request.GET.get('page')
+        try:
+            context['news_list'] = current_page.page(page)
+        except PageNotAnInteger:
+            context['news_list'] = current_page.page(1)
+        except EmptyPage:
+            context['news_list'] = current_page.page(current_page.num_pages)
+        return context
+
+
+class NewsDetailView(DetailView):
+    model = News
+    template_name = 'BMTNews_App/piece_of_news.html'
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(News, pk=self.kwargs['news_id'])
+
+
+class LastNewsView(ListView):
+    model = News
+    template_name = 'BMTNews_App/index.html'
+
+    def get_context_data(self, **kwargs):
+        context = {'last_news': News.objects.last()}
+        last_news_list = News.objects.all().order_by('-news_date')[:4]
+        context['last_news_list'] = last_news_list
+        return context

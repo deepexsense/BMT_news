@@ -32,7 +32,7 @@ class Article(models.Model):
         return self.article_title
 
     def get_absolute_url(self):
-        return reverse('article', kwargs={'section': self.article_section.id,
+        return reverse('article', kwargs={'section': self.article_section.section_url,
                                           'article_id': self.id})
 
 
@@ -98,3 +98,13 @@ class Comment(models.Model):
         if level > 5:
             level = 5
         return 12 - level
+
+
+class News(models.Model):
+    news_title = models.CharField(max_length=100)
+    news_text = models.TextField()
+    news_img = models.ImageField(upload_to='')
+    news_date = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return self.news_text[0:20]

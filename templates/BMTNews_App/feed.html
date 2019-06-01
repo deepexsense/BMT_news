@@ -1,0 +1,24 @@
+{% extends 'BMTNews_App/base.html' %}
+{% load staticfiles %}
+
+{% block title %}Свежие новости{% endblock %}
+
+{% block content %}
+    <div class="row" style="border-bottom:none;">
+        {% for n in news_list|dictsortreversed:"news_date" %}
+            <div class="card" id="id_news_card">
+                <img class="card-img-top" src="/static/media/{{ n.news_img }}" alt="{{ n.news_title }}">
+                <div class="card-body">
+                    <a href="{% url "news" n.id %}">
+                        <h4 class="card-title">{{ n.news_title }}</h4>
+                    </a>
+                </div>
+                <div class="card-footer" style="bottom: 0">
+                    {{ n.news_date }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% load bootstrap4 %}
+    {% bootstrap_pagination news_list %}
+{% endblock %}

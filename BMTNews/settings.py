@@ -139,6 +139,10 @@ STATICFILES_DIRS = [
 STATIC_URL = '/static/'
 STATIC_ROOT = 'staticfiles'
 
+# MEDIA_DIRS = os.path.join(BASE_DIR, "BMTNews/media")
+# MEDIA_URL = '/static/media/'
+MEDIA_ROOT = 'BMTNews/static/media/'
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'               # Сервер для отправки сообщений
 EMAIL_HOST_USER = 'furi5ad@gmail.com'        # имя пользователя

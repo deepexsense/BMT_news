@@ -2,6 +2,7 @@
 <html lang="en">
 {% load staticfiles %}
 <head>
+    <link rel="shortcut icon" href="{% static "media/bmt_gold.ico" %}" type="image/x-icon">
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
 </head>
@@ -9,8 +10,9 @@
 <div class="header">
     <header id="id_header">
         <nav class="navbar navbar-expand-lg bg-lightest-blue" id="id_navbar">
-            <a class="logotype" title="НОВОСТИ БМТ" href="{% url "index" %}">
-                <img src="/static/img/bmt_gold.png" alt="adsa" width="50px" height="50px">
+            <a class="logotype" title="НОВОСТИ БМТ" href="{% url "index" %}" style="text-decoration: none;">
+                <img src="/static/media/bmt_logo.gif" alt="adsa" width="50px" height="50px">
+                <img src="/static/media/BMT_text.png" alt="adsa" width="150px" height="50px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +69,8 @@
 </div>
 </body>
 {# LINKS#}
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="{% static "Shards-2.1.0/css/shards.min.css" %}">

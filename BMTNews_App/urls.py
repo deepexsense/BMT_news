@@ -3,7 +3,7 @@ from django.conf.urls import url
 from BMTNews_App import views
 
 urlpatterns = [
-    url(r'^$', views.TemplateView.as_view(template_name='BMTNews_App/index.html'), name='index'),
+    url(r'^$', views.LastNewsView.as_view(), name='index'),
     url(r'^signup/$', views.SignUpFormView.as_view(), name='signup'),
     url(r'^login/$', views.SignInFormView.as_view(), name='login'),
     url(r'^posts/$', views.PostsView.as_view(), name='posts'),
@@ -16,5 +16,7 @@ urlpatterns = [
     url(r'^logout/$', views.LogoutView.as_view(), name='logout'),
     url(r'^contacts/$', views.ContactsView.as_view(), name='contacts'),
     url(r'^user/(?P<id>[0-9]+)/$', views.UserSubscribedView.as_view(), name='user_subscribed'),
-    url(r'^search/$', views.SearchView.as_view(), name='search')
+    url(r'^search/$', views.SearchView.as_view(), name='search'),
+    url(r'^feed/$', views.NewsFeed.as_view(), name='feed'),
+    url(r'^feed/(?P<news_id>[0-9]+)/$', views.NewsDetailView.as_view(), name='news'),
 ]
