@@ -4,7 +4,7 @@
 {% block title %}Свежие новости{% endblock %}
 
 {% block content %}
-    <div class="row" style="border-bottom:none;">
+    <div class="row" style="border-bottom:none; margin-bottom: 0">
         {% for n in news_list|dictsortreversed:"news_date" %}
             <div class="card" id="id_news_card">
                 <img class="card-img-top" src="https://res.cloudinary.com/hxgbvvl4r/image/upload/v1559416509/{{ n.news_img }}" alt="{{ n.news_title }}">

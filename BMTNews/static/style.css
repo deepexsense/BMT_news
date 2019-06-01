@@ -159,18 +159,8 @@ h2 {
 
 #id_news_card {
     width: 19rem;
-    height: 27.5rem;
+    height: 30rem;
     margin: 1%;
-}
-
-#id_news_card:hover:after {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #FFF;
-    font-size: 2em;
-    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.4);
 }
 
 .pagination {
