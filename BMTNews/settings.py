@@ -25,8 +25,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '_m04w54c**6%2(pby(%z77)a!y)g0p)bb!fdw*craryv-^oyjt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = False
+# DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  'bmtnews.herokuapp.com', ]
@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['127.0.0.1',
 # Application definition
 
 INSTALLED_APPS = [
+    'dropbox',
     'bootstrap4',
     'bootstrap3',
     'BMTNews_App',
@@ -141,7 +142,6 @@ STATIC_ROOT = 'staticfiles'
 
 # MEDIA_DIRS = os.path.join(BASE_DIR, "BMTNews/media")
 # MEDIA_URL = '/static/media/'
-MEDIA_ROOT = 'BMTNews/static/media/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'               # Сервер для отправки сообщений
@@ -151,3 +151,7 @@ EMAIL_PORT = 587                            # порт для подключен
 EMAIL_USE_TLS = True                        # использование протокола шифрования
 DEFAULT_FROM_EMAIL = 'furi5ad@gmail.com'   # email, с которого будет отправлено письмо
 AUTH_USER_MODEL = 'BMTNews_App.User'
+DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
+DROPBOX_OAUTH2_TOKEN = 'NONPloBlelAAAAAAAAAAGmagyXwF_tHM2uPUBWm8JEce5AY-bFt8ZARXQN7aLS-y'
+DROPBOX_ROOT_PATH = 'BMTNews/static/media/'
+MEDIA_ROOT = DROPBOX_ROOT_PATH
